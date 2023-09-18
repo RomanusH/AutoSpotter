@@ -1,0 +1,33 @@
+Project Title: AutoSpotter — Spot Your Dream Cars!
+
+Description of the project:
+AutoSpotter aims to be the reachable for car enthusiasts and those for looking to buy a car. Our platform gives you all the info to you to find a suitable choice. We offer:
+
+-Smart Car Search: Users can easily find cars using many different filters such as make, model, year, body type, engine type, and more to come.
+
+-Full Car Details: For each car, users get a complete overview, including specs and features.
+
+-Easy to Use Accounts: Registered users can keep track of their choices and preferences in a personal dashboard.
+
+-Compare Cars: Users can select multiple cars and compare them to find out which one fits their needs the best.
+
+-Favorites List: Registered users can save their favorite cars for easy access.
+
+                             Main Entities  
+
+1.Vehicle Types: Includes Sedans, SUVs, Sport Coupes, Station Wagons, Hatchbacks and many more.
+2.User Types: Includes Visitors and Registered Users.
+
+                           User Interactions
+
+1.Smart Car Search: Search through our extensive car list with our easy to use filters.
+
+2.Full Car Details: Click on a car to see more details and learn everything you need to know about it.
+
+3.Compare Cars: Choose more than one car and compare them on the same screen.
+
+4.Easy to Use Accounts: Once registered, users can log in to see their own page with saved preferences and choices.
+
+5.Favorites List: Save cars you like and easily check them out later from your page.
+
+6.Input Checks: If a user enters something wrong, the system will give helpful tips to correct it.

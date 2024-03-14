@@ -1,0 +1,380 @@
+:root {
+    --racing-red: #D50000;
+    --carbon-gray: #333333;
+    --platinum: #C9C7C5;
+    --gold-accent: #FFD700;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    max-width: 2000px;
+    background-color: var(--carbon-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 3px solid var(--black);
+    z-index: 10;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#navbar-decoration {
+    width: 15rem;
+    height: 100%;
+    border-right: 7px solid var(--black);
+    border-left: 10px solid var(--black);
+    border-style: dashed;
+    background-color: var(--gold-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(45deg);
+    overflow: hidden;
+    transition: width 0.5s;
+    margin: 0 5rem;
+}
+
+#navbar-decoration div {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    transform: skew(-45deg);
+    transition: font-size 0.5s;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+}
+
+.navbar-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-nav li a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.7rem 1.4rem;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.navbar-nav li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.navbar-nav-account {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+.navbar-nav-account:hover {
+    color: var(--gold-accent);
+}
+
+.section1 {
+    display: flex;
+    height: 25rem;
+    width: 100%;
+    background-color: var(--black);
+    background-image: url(../img/audi_rs_6_avant_performance_5k-HD.jpg);
+    background-size: cover
+        /* auto 60rem; */;
+    background-position:
+        /*100% 4rem*/
+        0% 50%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+.section1 div {
+    margin: 4rem 5rem;
+}
+
+.section1 h1 {
+    font-size: 3rem;
+    color: var(--gold-accent);
+}
+
+.section1 h3 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.section1 p {
+    font-size: 1rem;
+    color: var(--gold-accent);
+    opacity: 0.9;
+    line-height: 1.5rem;
+}
+
+.section2 {
+    background-color: var(--white);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2rem 5rem;
+    border-top: 5px solid var(--black);
+}
+
+.section2 ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 2rem;
+}
+
+.section2 ul li {
+    display: flex;
+    flex-direction: column;
+    /* flex: 0 0 calc(40% - 1rem); */
+    font-size: 1rem;
+    color: var(--black);
+    text-decoration: none;
+    background-color: var(--carbon-gray);
+    padding: 1rem;
+    border: 3px solid var(--black);
+    border-radius: 20px;
+    width: 20rem;
+    color: var(--white);
+}
+
+.section2 ul li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gold-accent);
+}
+
+/* ====================================================== */
+
+.section3 {
+    padding: 5rem 5rem;
+    background-color: var(--gold-accent);
+}
+
+.section3-search {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section3 select,
+.section3 button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.section3 select {
+    background-color: var(--carbon-gray);
+    color: var(--white);
+}
+
+.section3 option {
+    background-color: #2c2c2c;
+    color: var(--white);
+}
+
+.section3 button {
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+#result {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+#result img {
+    width: 500px;
+    height: auto;
+    border: 5px solid var(--black);
+    border-radius: 10px;
+}
+
+#result div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#result div p {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 0;
+}
+
+#result div p strong {
+    color: var(--black);
+    margin-right: 0.5rem;
+}
+
+#result h3 {
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--racing-red);
+    font-weight: bold;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navbar-nav ul {
+        gap: 1.5rem;
+    }
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .navbar-nav {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 65%;
+    }
+
+    .navbar-nav ul {
+        gap: 1.2rem;
+    }
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .navbar-nav {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 50%;
+    }
+
+    #navbar-decoration {
+        display: none;
+    }
+
+    .navbar-nav li a {
+        font-size: 1rem;
+        border-width: 2px;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    .navbar-nav ul {
+        gap: 1rem;
+    }
+
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .navbar-nav {
+        gap: 2rem;
+    }
+
+    .navbar-nav-account {
+        font-size: 2rem;
+        color: var(--gold-accent);
+    }
+
+    .section1 div {
+        margin: 5rem;
+    }
+
+    .section2 ul li {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section1 div {
+        margin: 3rem 5rem;
+    }
+
+    .section1 h1 {
+        font-size: 2rem;
+    }
+
+    .section1 h3 {
+        font-size: 1.2rem;
+    }
+
+    .section1 p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .section2 {
+        padding: 2rem 1rem;
+    }
+
+    .section2 ul {
+        flex-wrap: wrap;
+    }
+
+    .section2 ul li {
+        flex: 0 0 calc(35% - 1rem);
+    }
+}

@@ -1,0 +1,231 @@
+:root {
+    --racing-red: #D50000;
+    --carbon-gray: #333333;
+    --platinum: #C9C7C5;
+    --gold-accent: #FFD700;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    max-width: 2000px;
+    background-color: var(--carbon-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 3px solid var(--black);
+    z-index: 10;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#navbar-decoration {
+    width: 15rem;
+    height: 100%;
+    border-right: 7px solid var(--black);
+    border-left: 10px solid var(--black);
+    border-style: dashed;
+    background-color: var(--gold-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(45deg);
+    overflow: hidden;
+    transition: width 0.5s;
+    margin: 0 5rem;
+}
+
+#navbar-decoration div {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    transform: skew(-45deg);
+    transition: font-size 0.5s;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+}
+
+.navbar-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-nav li a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.7rem 1.4rem;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.navbar-nav li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.navbar-nav-account {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+.navbar-nav-account:hover {
+    color: var(--gold-accent);
+}
+/* ================================================ */
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.section1 form {
+    display: inline-block;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+.section1 label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.section1 input[type="text"],
+.section1 input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    outline: none;
+}
+
+.section1 input[type="submit"] {
+    background-color: var(--gold-accent);
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.section1 input[type="submit"]:hover {
+    background-color: var(--racing-red);
+    color: var(--white);
+}
+
+/* ================================================ */
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navbar-nav ul {
+        gap: 1.5rem;
+    }
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .navbar-nav {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 65%;
+    }
+
+    .navbar-nav ul {
+        gap: 1.2rem;
+    }
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .navbar-nav {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 50%;
+    }
+
+    #navbar-decoration {
+        display: none;
+    }
+
+    .navbar-nav li a {
+        font-size: 1rem;
+        border-width: 2px;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    .navbar-nav ul {
+        gap: 1rem;
+    }
+
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .navbar-nav {
+        gap: 2rem;
+    }
+
+    .navbar-nav-account {
+        font-size: 2rem;
+        color: var(--gold-accent);
+    }
+}

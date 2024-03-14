@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Car</title>
+    <link rel="stylesheet" href="../style/input.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="navbar-logo" href="#">Logo</a>
+            <div id="navbar-decoration">
+                <div>AutoSpotter</div>
+            </div>
+            <div class="navbar-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./input.html">Add car</a></li>
+                </ul>
+                <a class="navbar-nav-account" href="#"><i class="fa-solid fa-id-card"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <div>
+            <form id="carInputForm">
+                <label for="inputMake">Make:</label>
+                <input type="text" id="inputMake" required>
+
+                <label for="inputModel">Model:</label>
+                <input type="text" id="inputModel" required>
+
+                <label for="inputYear">Year:</label>
+                <input type="number" id="inputYear" required>
+
+                <input type="submit" value="Add Car">
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/database.js"></script>
+    <script src="../js/input.js"></script>
+</body>
+
+</html>

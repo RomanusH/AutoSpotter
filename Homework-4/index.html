@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/607a7a831b.js" crossorigin="anonymous"></script>
+    <title>Home page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-logo" href="#">Logo</a>
+            <div id="navbar-decoration">
+                <div>AutoSpotter</div>
+            </div>
+            <div class="navbar-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+                <a class="navbar-nav-account" href="#"><i class="fa-solid fa-id-card"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <div>
+            <h1>Welcome to AutoSpotter!</h1>
+            <h3></h3>
+            <p>AutoSpotter is your trusted destination to explore, compare, and find the ideal vehicle that fits your
+                needs and preferences. <br> Our extensive collection, detailed specifications, and user reviews provide
+                a
+                comprehensive overview of the automotive world.</p>
+        </div>
+    </section>
+    <section class="section2">
+        <ul>
+            <li><span>Vast Selection:</span><br> From economy to luxury, find cars from all categories.</li>
+            <li><span>Expert Reviews:</span><br> Learn from the experiences of automotive experts.</li>
+            <li><span>User Ratings:</span><br> Discover what real owners have to say about their rides.</li>
+            <li><span>Quick Search:</span><br> Find your dream car in just a few clicks!</li>
+        </ul>
+    </section>
+
+    <section class="section3">
+        <div class="section3-search">
+            <select id="make" onchange="updateModels()">
+                <option value="" disabled selected>Select Make</option>
+            </select>
+            <select id="model" onchange="updateYears()">
+                <option value="" disabled selected>Select Model</option>
+            </select>
+            <select id="year">
+                <option value="" disabled selected>Select Year</option>
+            </select>
+            <button onclick="searchCar()">Search</button>
+        </div>
+        <div id="result">
+            <!-- Car info and image will be displayed here -->
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
